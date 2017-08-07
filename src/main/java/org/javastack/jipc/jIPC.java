@@ -288,8 +288,9 @@ public class jIPC {
 	private void putInt(final int off, final int value) {
 		if (useUnsafe) {
 			UnsafeAccess.putInt(bbAddress + off, value);
+		} else {
+			bb.putInt(off, value);
 		}
-		bb.putInt(off, value);
 	}
 
 	private byte getByte(final int off) {
@@ -302,8 +303,9 @@ public class jIPC {
 	private void putByte(final int off, final byte value) {
 		if (useUnsafe) {
 			UnsafeAccess.putByte(bbAddress + off, value);
+		} else {
+			bb.put(off, value);
 		}
-		bb.put(off, value);
 	}
 
 	/**

@@ -4,7 +4,7 @@
 
 	<groupId>org.javastack</groupId>
 	<artifactId>jipc</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Inter-Process Communication based on SharedMemory (mmaped-file) for Java</description>
 
 	<name>${project.groupId}:${project.artifactId}</name>
